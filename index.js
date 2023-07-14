@@ -27,6 +27,10 @@ const start = () => {
                 chatId,
                 'https://cdn.tlgrm.app/stickers/b0d/85f/b0d85fbf-de1b-4aaf-836c-1cddaa16e002/192/1.webp'
             );
+            await bot.sendSticker(
+                chatId,
+                'https://cdn.vox-cdn.com/thumbor/xBIBkXiGLcP-kph3pCX61U7RMPY=/0x0:1400x788/1200x800/filters:focal(588x282:812x506)/cdn.vox-cdn.com/uploads/chorus_image/image/70412073/0377c76083423a1414e4001161e0cdffb0b36e1f_760x400.0.png'
+            )
             return bot.sendMessage(chatId, `Ты написал мне ${text}`);
         } else if (text === '/info') {
             return bot.sendMessage(chatId, `Тебя зовут ${msg.from.first_name} ${msg.from.last_name}`);
